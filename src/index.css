@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fit India Gym Gym Website Design System 
+Black & Saffron Theme - All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --background: 0 0% 0%;
+    --foreground: 210 20% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 210 20% 95%;
+
+    /* Saffron Primary Brand Color */
+    --primary: 30 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    /* Dark Secondary Colors */
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 30 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 30 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Gym Theme Colors */
+    --saffron: 30 100% 50%;
+    --saffron-light: 35 100% 60%;
+    --saffron-dark: 25 100% 40%;
+    --dark-bg: 0 0% 8%;
+    --light-text: 210 20% 95%;
+    --gray-text: 210 10% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--saffron-light)));
+    --gradient-dark: linear-gradient(135deg, hsl(var(--background)), hsl(var(--dark-bg)));
+
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 20px hsl(var(--saffron) / 0.3);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark mode already implemented as default theme */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body overflow-x-hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--saffron));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--saffron-light));
+  }
+}
+
+@layer components {
+  /* Gym-specific component styles */
+  .hero-text {
+    @apply text-6xl md:text-8xl font-bold text-white leading-tight;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold text-white mb-6;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-saffron to-saffron-light text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm sm:text-base;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-secondary {
+    @apply border-2 border-saffron text-saffron bg-transparent font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:bg-saffron hover:text-black;
+  }
+
+  .card-gym {
+    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:bg-dark-bg hover:border-saffron/30;
+    box-shadow: var(--shadow-card);
+  }
+
+  .floating-whatsapp {
+    @apply fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--saffron-light)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
