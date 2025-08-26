@@ -29,8 +29,8 @@ const Home = () => {
   const stats = [
     { number: "500+", label: "Happy Members", icon: Users },
     { number: "5+", label: "Years Experience", icon: Award },
-    { number: "50+", label: "Expert Trainers", icon: Dumbbell },
-    { number: "24/7", label: "Gym Access", icon: Clock }
+    { number: "5+", label: "Expert Trainers", icon: Dumbbell },
+    { number: "6", label: "Days Gym Access", icon: Clock }
   ];
 
   const services = [
@@ -72,14 +72,14 @@ const Home = () => {
       location: "Pithampur",
       rating: 5,
       text: "Joining FitZone Pithampur was the best decision I made this year! I've lost 10kg and feel more energetic than ever.",
-      image: "/public/t1.jpg"
+      image: "/t1.jpg"
     },
     {
       name: "Raj Verma",
       location: "Pithampur",
       rating: 5,
       text: "State-of-the-art equipment and personal trainers who truly care. Highly recommended!",
-      image: "/public/t2.jpg"
+      image: "/t2.jpg"
 
     },
     {
@@ -87,7 +87,7 @@ const Home = () => {
       location: "Pithampur",
       rating: 5,
       text: "The yoga and cardio classes are excellent. FitZone has become a part of my daily life!",
-      image: "/public/t3.jpg"
+      image: "/t3.jpg"
 
     }
   ];

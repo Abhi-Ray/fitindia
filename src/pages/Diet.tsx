@@ -24,32 +24,32 @@ const Diet = () => {
     {
       id: 'weight-loss',
       title: 'Weight Loss Diet',
-      subtitle: 'Shed those extra pounds with our scientifically designed meal plans',
+      subtitle: 'Lose weight with healthy meal plans',
       icon: TrendingDown,
       color: 'from-red-600 to-red-400',
       features: [
-        'Calorie deficit optimized meals',
-        'High protein, low carb focus',
-        'Metabolism boosting foods',
-        '6 meals per day structure',
-        'Indian regional variations',
+        'Calorie deficit with local foods',
+        'High protein, low oil focus',
+        'Indori snacks made healthy',
+        '6 small meals per day',
+        'Regional vegetarian/non-veg choices',
         'Weekly progress tracking'
       ],
       vegSample: {
-        breakfast: 'Oats with berries + Green tea',
-        midMorning: 'Mixed nuts (10-12 pieces)',
-        lunch: 'Brown rice + Moong dal + Palak sabzi',
-        evening: 'Buttermilk + Roasted chana',
-        dinner: 'Grilled paneer + Mixed salad + Roti',
-        bedtime: 'Warm turmeric milk'
+        breakfast: 'Poha with sprouts + Green tea',
+        midMorning: 'Roasted chana + 1 guava',
+        lunch: '2 multigrain rotis + Palak dal + Seasonal sabzi',
+        evening: 'Buttermilk + 1 Khakra',
+        dinner: 'Grilled paneer tikka + Salad',
+        bedtime: 'Haldi doodh (turmeric milk)'
       },
       nonVegSample: {
-        breakfast: 'Oats with berries + Green tea',
-        midMorning: 'Mixed nuts (10-12 pieces)',
-        lunch: 'Brown rice + Dal + Chicken curry (lean)',
-        evening: 'Buttermilk + Roasted chana',
+        breakfast: 'Poha with boiled egg whites + Green tea',
+        midMorning: 'Roasted chana + 1 guava',
+        lunch: '2 multigrain rotis + Dal + Chicken curry (less oil)',
+        evening: 'Buttermilk + 1 Khakra',
         dinner: 'Grilled chicken breast + Salad',
-        bedtime: 'Warm turmeric milk'
+        bedtime: 'Haldi doodh (turmeric milk)'
       },
       duration: '3-6 months',
       results: 'Lose 8-12 kg safely'
@@ -57,32 +57,32 @@ const Diet = () => {
     {
       id: 'muscle-gain',
       title: 'Muscle Gain Diet',
-      subtitle: 'Build lean muscle mass with protein-rich Indian nutrition',
+      subtitle: 'Build muscle with protein-rich meals',
       icon: TrendingUp,
       color: 'from-green-600 to-green-400',
       features: [
-        'High protein intake (2g/kg body weight)',
-        'Complex carbohydrates timing',
-        'Pre & post workout nutrition',
-        'Muscle building supplements guide',
-        'Vegetarian & non-vegetarian options',
-        'Strength training meal timing'
+        'High protein from local foods',
+        'Timing carbs with workouts',
+        'Pre & post gym Indori meals',
+        'Simple supplement guidance',
+        'Veg & non-veg options',
+        'Structured around strength training'
       ],
       vegSample: {
-        breakfast: 'Paneer paratha + Banana + Protein shake',
-        midMorning: 'Protein smoothie + Almonds',
-        lunch: 'Rajma + Brown rice + Vegetables + Curd',
-        evening: 'Greek yogurt + Dates + Sprouts',
-        dinner: 'Tofu curry + Quinoa + Mixed salad',
-        bedtime: 'Protein shake + Milk'
+        breakfast: 'Moong chilla + Banana + Protein shake',
+        midMorning: 'Soya chunks salad + Almonds',
+        lunch: 'Chole + Brown rice + Salad + Curd',
+        evening: 'Sprouts bhel + Dates + Buttermilk',
+        dinner: 'Paneer bhurji + Jowar roti + Salad',
+        bedtime: 'Milk + Protein shake'
       },
       nonVegSample: {
-        breakfast: 'Egg whites omelet + Banana + Oats',
-        midMorning: 'Protein shake + Almonds',
-        lunch: 'Chicken/Fish + Brown rice + Vegetables',
-        evening: 'Greek yogurt + Dates',
-        dinner: 'Lean meat + Quinoa + Salad',
-        bedtime: 'Casein protein + Milk'
+        breakfast: 'Egg bhurji with multigrain toast + Banana',
+        midMorning: 'Chicken sandwich (brown bread)',
+        lunch: 'Grilled chicken/fish + Rice + Dal + Salad',
+        evening: 'Sprouts bhel + Buttermilk',
+        dinner: 'Egg curry/Chicken curry + Roti + Salad',
+        bedtime: 'Milk + Casein protein'
       },
       duration: '6-12 months',
       results: 'Gain 5-8 kg lean muscle'
@@ -90,64 +90,66 @@ const Diet = () => {
     {
       id: 'maintenance',
       title: 'Healthy Maintenance',
-      subtitle: 'Maintain optimal health with balanced Indian nutrition',
+      subtitle: 'Stay fit with balanced food',
       icon: Heart,
       color: 'from-blue-600 to-blue-400',
       features: [
-        'Balanced macro nutrients',
-        'Traditional Indian recipes',
-        'Seasonal food adaptations',
-        'Digestive health focus',
-        'Energy optimization',
-        'Long-term lifestyle approach'
+        'Balanced macros, no crash diets',
+        'Traditional recipes adapted',
+        'Seasonal fruits & veggies',
+        'Digestive health support',
+        'Energy & immunity focus',
+        'Sustainable daily routine'
       ],
       vegSample: {
-        breakfast: 'Poha/Upma + Fresh orange juice',
-        midMorning: 'Seasonal fruit + Handful nuts',
-        lunch: 'Roti + Dal + Aloo sabzi + Curd',
-        evening: 'Green tea + Marie biscuits',
-        dinner: 'Vegetable curry + Rice + Salad',
-        bedtime: 'Herbal tea (chamomile/tulsi)'
+        breakfast: 'Poha with peanuts + Fresh juice',
+        midMorning: 'Seasonal fruit (Sitaphal/Mango in season) + Handful nuts',
+        lunch: '2 rotis + Dal + Aloo sabzi + Curd',
+        evening: 'Masala chai + Roasted makhana',
+        dinner: 'Mix veg curry + Rice + Salad',
+        bedtime: 'Tulsi tea'
       },
       nonVegSample: {
-        breakfast: 'Poha/Upma + Fresh juice',
-        midMorning: 'Seasonal fruit',
+        breakfast: 'Poha + Boiled eggs + Fresh juice',
+        midMorning: 'Seasonal fruit (Papaya/Apple)',
         lunch: 'Roti + Dal + Chicken curry + Curd',
-        evening: 'Green tea + Biscuits',
-        dinner: 'Fish curry + Rice + Salad',
-        bedtime: 'Herbal tea'
+        evening: 'Masala chai + Roasted peanuts',
+        dinner: 'Fish curry/Chicken curry + Rice + Salad',
+        bedtime: 'Chamomile/Tulsi tea'
       },
       duration: 'Ongoing',
-      results: 'Sustained energy & health'
+      results: 'Sustained energy & long-term health'
     }
   ];
+  
 
   const indianMealCategories = [
     {
       type: 'Vegetarian Options',
       icon: Leaf,
       meals: [
-        'Dal varieties (Moong, Masoor, Chana)',
-        'Paneer-based dishes',
-        'Quinoa and Brown rice',
-        'Seasonal vegetables',
-        'Sprouts and Legumes',
-        'Traditional yogurt dishes'
+        'Dal varieties (Moong, Toor, Masoor)',
+        'Paneer bhurji / Paneer tikka',
+        'Jowar/Bajra roti + Sabzi',
+        'Seasonal vegetables (Bhindi, Lauki, Tinda)',
+        'Sprouts chaat / Sprouts bhel',
+        'Curd, Buttermilk & Raita varieties'
       ]
     },
     {
       type: 'Non-Vegetarian Options',
       icon: Users,
       meals: [
-        'Grilled chicken breast',
-        'Fish curry (Bengali/South Indian)',
-        'Egg preparations',
-        'Lean mutton dishes',
-        'Seafood varieties',
-        'Protein-rich gravies'
+        'Grilled chicken breast (Tandoori style)',
+        'Egg curry / Egg bhurji',
+        'Chicken curry (less oil)',
+        'Fish fry (Tilapia/Rohu) or Fish curry',
+        'Lean mutton curry (occasionally)',
+        'Omelette with roti / egg toast'
       ]
     }
   ];
+  
 
   const whatsappNumber = "919876543210";
   

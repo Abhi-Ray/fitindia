@@ -41,7 +41,7 @@ const About = () => {
 
   const achievements = [
     "500+  Members",
-    "50+ Certified Trainers",
+    "5+ Certified Trainers",
     "5+ Years of Excellence",
     "Award-winning Gym of the Year 2023",
     "10,000+ Happy Members",

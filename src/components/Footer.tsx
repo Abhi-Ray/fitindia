@@ -38,21 +38,35 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
+         {/* Contact Info */}
+         <div>
             <h3 className="font-heading font-semibold text-white mb-4">Contact Info</h3>
-            <div className="space-y-3">
+            <div className="space-y-5">
+              {/* Phone */}
               <div className="flex items-center space-x-3 text-gray-text">
                 <Phone className="h-5 w-5 text-saffron" />
                 <span>+91 8718074703</span>
               </div>
-             
+
+              {/* Branch 1 - Main */}
               <div className="flex items-start space-x-3 text-gray-text">
                 <MapPin className="h-5 w-5 text-saffron mt-1" />
                 <span>CC Power Square, Pithampur Behind Yashika Palace Hotel</span>
               </div>
+
+              {/* Branch 2 - Fitness Garage Gym */}
+              <div className="flex items-start space-x-3 text-gray-text">
+                <MapPin className="h-5 w-5 text-saffron mt-1" />
+                <span>A108, Chhatrachhaya, Sagour Kuti, Pithampur, Madhya Pradesh 454775</span>
+              </div>
+
+              {/* Branch 3 - Fit India Gym Cosmos */}
+              <div className="flex items-start space-x-3 text-gray-text">
+                <MapPin className="h-5 w-5 text-saffron mt-1" />
+                <span>D-16, Pithampur Industrial Area, Cosmos Colony, Bhatkhedi, Madhya Pradesh 453441</span>
+              </div>
             </div>
-            
+
             <div className="mt-6">
               <h4 className="font-semibold text-white mb-2">Gym Hours</h4>
               <div className="text-gray-text text-sm space-y-1">

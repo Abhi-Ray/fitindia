@@ -18,7 +18,7 @@ const Membership = () => {
     const isMonthly = cycle === 'monthly';
     return [
       { label: 'Steam Access', value: isMonthly ? '₹300/month' : 'Free' },
-      { label: 'Personal Training', value: 'Free' },
+      { label: 'Personal Training', value: '₹3000/month' },
       { label: 'Diet Counseling', value: 'Free' },
       { label: 'Locker Access', value: isMonthly ? '₹100/month' : 'Free' },
     ];

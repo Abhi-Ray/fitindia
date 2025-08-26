@@ -20,6 +20,8 @@ const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <section className={`relative ${height} flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8`}>
+      {/* Preload background image for better LCP */}
+      <img src={backgroundImage} alt="" loading="eager" fetchPriority="high" aria-hidden="true" className="hidden" />
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
