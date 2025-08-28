@@ -17,10 +17,10 @@ const Membership = () => {
   const getAddOns = (cycle: keyof typeof pricing) => {
     const isMonthly = cycle === 'monthly';
     return [
-      { label: 'Steam Access', value: isMonthly ? '₹300/month' : 'Free' },
+      { label: 'Steam Access', value:  '₹300/month' },
       { label: 'Personal Training', value: '₹3000/month' },
       { label: 'Diet Counseling', value: 'Free' },
-      { label: 'Locker Access', value: isMonthly ? '₹100/month' : 'Free' },
+      { label: 'Locker Access', value: '₹100/month' },
     ];
   };
 

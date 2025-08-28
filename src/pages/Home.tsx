@@ -51,7 +51,7 @@ const Home = () => {
     },
     {
       icon: Zap,
-      title: "Group Classes",
+      title: "Zumba Classes",
       description: "Join energetic group fitness classes including yoga, Zumba, and HIIT."
     },
     {

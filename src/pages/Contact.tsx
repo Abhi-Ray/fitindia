@@ -17,7 +17,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91 8718074703'],
+      details: ['+91 8718074703', '+91 7999672577'],
       action: 'tel:+918718074703'
     },
     {
@@ -152,6 +152,13 @@ const Contact = () => {
                     className="justify-center min-w-48"
                   >
                     Call Now: +91 8718074703
+                  </CTAButton>
+                  <CTAButton
+                    variant="secondary"
+                    href="tel:+917999672577"
+                    className="justify-center min-w-48"
+                  >
+                    Call Now: +91 7999672577
                   </CTAButton>
                 </div>
               </motion.div>

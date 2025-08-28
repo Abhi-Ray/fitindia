@@ -43,10 +43,14 @@ const Footer = () => {
             <h3 className="font-heading font-semibold text-white mb-4">Contact Info</h3>
             <div className="space-y-5">
               {/* Phone */}
-              <div className="flex items-center space-x-3 text-gray-text">
-                <Phone className="h-5 w-5 text-saffron" />
-                <span>+91 8718074703</span>
-              </div>
+              <div className="flex items-start space-x-3 text-gray-text">
+      <Phone className="h-5 w-5 text-saffron mt-1" />
+      <div className="flex flex-col">
+        <span>+91 8718074703</span>
+        <span>+91 7999672577</span>
+      </div>
+    </div>
+
 
               {/* Branch 1 - Main */}
               <div className="flex items-start space-x-3 text-gray-text">
