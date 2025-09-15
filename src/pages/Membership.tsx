@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Check, ArrowRight, Flame } from 'lucide-react';
 import CTAButton from '@/components/CTAButton';
 import HeroSection from '@/components/HeroSection';
+import Seo from '@/components/Seo';
 
 const Membership = () => {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'quarterly' | 'half' | 'yearly'>('monthly');
@@ -39,6 +40,10 @@ const Membership = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Fit India Gym Membership Plans - Flexible and Affordable"
+        description="Explore our flexible and affordable gym membership plans. Choose from monthly, quarterly, half-yearly, or yearly options to start your fitness journey with Fit India Gym."
+      />
       {/* Hero Section */}
       <HeroSection
         title="MEMBERSHIP PLAN"

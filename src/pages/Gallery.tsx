@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
+import Seo from '@/components/Seo';
 
 // 🖼 Local branch images
 import garage1 from '@/assets/gallery/garage1.jpeg';
@@ -70,6 +71,10 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Fit India Gym Gallery - Explore Our Fitness Centers"
+        description="Explore the gallery of Fit India Gym's branches. See our state-of-the-art equipment, training areas, and vibrant fitness community in action."
+      />
       {/* Hero Section */}
       <HeroSection
         title="GALLERY"

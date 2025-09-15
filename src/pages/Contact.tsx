@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import CTAButton from '@/components/CTAButton';
+import Seo from '@/components/Seo';
 
 const Contact = () => {
   const contactInfo = [
@@ -59,6 +60,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Contact Fit India Gym - Get in Touch With Us"
+        description="Contact Fit India Gym for memberships, personal training, and any inquiries. Find our address, phone number, and operating hours. We're here to help you get started."
+      />
       {/* Hero Section */}
       <HeroSection
         title="GET IN TOUCH"

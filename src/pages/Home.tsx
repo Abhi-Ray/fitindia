@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import CTAButton from '@/components/CTAButton';
+import Seo from '@/components/Seo';
 
 const Home = () => {
   const statsRef = useRef(null);
@@ -95,6 +96,10 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Fit India Gym - Premium Fitness Studio in Pithampur"
+        description="Transform your fitness journey at Fit India Gym - Premium gym with expert trainers, personalized diet plans, and modern equipment in the heart of India."
+      />
       {/* Hero Section */}
       <HeroSection
         title="TRANSFORM YOUR BODY, ELEVATE YOUR LIFE"

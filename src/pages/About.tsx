@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { Heart, Target, Users, Award, Star, CheckCircle } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import trainer1 from '@/assets/trainer-1.jpg';
+import Seo from '@/components/Seo';
 
 const About = () => {
   const missionRef = useRef(null);
@@ -50,6 +51,10 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="About Fit India Gym - Our Story, Mission, and Values"
+        description="Learn about Fit India Gym, our mission to make fitness accessible, and our commitment to building a healthier India. Discover our story and what makes us different."
+      />
       {/* Hero Section */}
       <HeroSection
         title="ABOUT Fit India Gym"

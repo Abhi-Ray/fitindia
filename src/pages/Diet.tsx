@@ -16,6 +16,7 @@ import {
 import HeroSection from '@/components/HeroSection';
 import CTAButton from '@/components/CTAButton';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import Seo from '@/components/Seo';
 
 const Diet = () => {
   const [selectedDiet, setSelectedDiet] = useState<string | null>(null);
@@ -162,6 +163,10 @@ const Diet = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Personalized Indian Diet Plans for Weight Loss & Muscle Gain"
+        description="Get scientifically designed Indian diet plans for weight loss, muscle gain, and healthy maintenance. Our expert nutritionists create personalized plans for your fitness goals."
+      />
       {/* Hero Section */}
       <HeroSection
         title="PERSONALIZED DIET PLANS"
