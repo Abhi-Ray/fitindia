@@ -72,7 +72,7 @@ const Home = () => {
       name: "Neha Jain",
       location: "Pithampur",
       rating: 5,
-      text: "Joining FitZone Pithampur was the best decision I made this year! I've lost 10kg and feel more energetic than ever.",
+      text: "Joining Fit India Gym Pithampur was the best decision I made this year! I've lost 10kg and feel more energetic than ever.",
       image: "/t1.jpg"
     },
     {
@@ -87,7 +87,7 @@ const Home = () => {
       name: "Sneha Kulkarni",
       location: "Pithampur",
       rating: 5,
-      text: "The yoga and cardio classes are excellent. FitZone has become a part of my daily life!",
+      text: "The yoga and cardio classes are excellent. Fit India Gym has become a part of my daily life!",
       image: "/t3.jpg"
 
     }

@@ -24,6 +24,10 @@ import cosmos2 from '@/assets/gallery/cosmos2.jpeg';
 import cosmos3 from '@/assets/gallery/cosmos3.jpeg';
 import cosmos4 from '@/assets/gallery/cosmos4.jpeg';
 
+// 🏆 Transformation images
+import trans1 from '/trans1.jpeg';
+import trans2 from '/trans2.jpeg';
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -53,6 +57,19 @@ const Gallery = () => {
     { id: 16, src: cosmos4, alt: 'Fit India Gym Cosmos - Members Training', category: 'cosmos', title: 'Fit India Gym Cosmos' },
   ];
 
+  // 🏆 Transformation data
+  const transformations = [
+    {
+      id: 1,
+      beforeImage: trans2,
+      afterImage: trans1,
+      title: "Amazing Transformation",
+      description: "Months of dedication and hard work",
+      name: "Member Success Story"
+    }
+    // Add more transformations as needed
+  ];
+
   const filteredGallery = selectedCategory === 'all'
     ? galleryItems
     : galleryItems.filter(item => item.category === selectedCategory);
@@ -75,6 +92,7 @@ const Gallery = () => {
         title="Fit India Gym Gallery - Explore Our Fitness Centers"
         description="Explore the gallery of Fit India Gym's branches. See our state-of-the-art equipment, training areas, and vibrant fitness community in action."
       />
+      
       {/* Hero Section */}
       <HeroSection
         title="GALLERY"
@@ -83,28 +101,140 @@ const Gallery = () => {
         height="h-96"
       />
 
-<div className="grid grid-cols-2 sm:flex sm:justify-center gap-3 mt-10 px-4">
-  {['all', 'garage', 'fit-india', 'cosmos'].map(cat => (
-    <button
-      key={cat}
-      onClick={() => setSelectedCategory(cat)}
-      className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-        selectedCategory === cat
-          ? 'bg-saffron text-black'
-          : 'bg-gray-700 text-white hover:bg-gray-600'
-      }`}
-    >
-      {cat === 'all'
-        ? 'All'
-        : cat === 'garage'
-        ? 'Fitness Garage Gym'
-        : cat === 'fit-india'
-        ? 'Fit India Gym'
-        : 'Fit India Gym Cosmos'}
-    </button>
-  ))}
-</div>
+      {/* Transformation Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              INCREDIBLE <span className="text-saffron">TRANSFORMATIONS</span>
+            </h2>
+            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              Witness the amazing journeys of our members who transformed their lives through dedication and our expert guidance.
+            </p>
+          </motion.div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {transformations.map((transformation, index) => (
+              <motion.div
+                key={transformation.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-700"
+              >
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                  {/* Before Image */}
+                  <div className="relative group">
+                    <div className="absolute -top-2 -left-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                      BEFORE
+                    </div>
+                    <div className="aspect-[3/4] rounded-xl overflow-hidden">
+                      <img
+                        src={transformation.beforeImage}
+                        alt="Before transformation"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+
+                  {/* After Image */}
+                  <div className="relative group">
+                    <div className="absolute -top-2 -left-2 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                      AFTER
+                    </div>
+                    <div className="aspect-[3/4] rounded-xl overflow-hidden">
+                      <img
+                        src={transformation.afterImage}
+                        alt="After transformation"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Transformation Details */}
+                <div className="text-center">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                    {transformation.title}
+                  </h3>
+                  <p className="text-saffron font-semibold mb-2">
+                    {transformation.description}
+                  </p>
+                  <p className="text-gray-300 text-sm">
+                    {transformation.name}
+                  </p>
+                </div>
+
+                {/* Success Metrics */}
+                {/* <div className="mt-6 pt-6 border-t border-gray-600">
+                  <div className="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                      <div className="text-2xl font-bold text-saffron">-15kg</div>
+                      <div className="text-xs text-gray-400">Weight Loss</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-saffron">+25%</div>
+                      <div className="text-xs text-gray-400">Muscle Gain</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-saffron">6mo</div>
+                      <div className="text-xs text-gray-400">Duration</div>
+                    </div>
+                  </div>
+                </div> */}
+              </motion.div>
+            ))}
+          </div>
+
+          {/* CTA Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-center mt-12"
+          >
+            <p className="text-gray-300 mb-6 text-lg">
+              Ready to start your own transformation journey?
+            </p>
+            <button className="bg-saffron hover:bg-orange-500 text-black font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+              Start Your Journey
+            </button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Category Filters */}
+      <div className="grid grid-cols-2 sm:flex sm:justify-center gap-3 mt-10 px-4">
+        {['all', 'garage', 'fit-india', 'cosmos'].map(cat => (
+          <button
+            key={cat}
+            onClick={() => setSelectedCategory(cat)}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+              selectedCategory === cat
+                ? 'bg-saffron text-black'
+                : 'bg-gray-700 text-white hover:bg-gray-600'
+            }`}
+          >
+            {cat === 'all'
+              ? 'All'
+              : cat === 'garage'
+              ? 'Fitness Garage Gym'
+              : cat === 'fit-india'
+              ? 'Fit India Gym'
+              : 'Fit India Gym Cosmos'}
+          </button>
+        ))}
+      </div>
 
       {/* Gallery Grid */}
       <section className="py-20 bg-background">
